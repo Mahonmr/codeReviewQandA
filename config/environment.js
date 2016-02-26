@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'qanda',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://crackling-heat-2521.firebaseIO.com/',
+    firebase: 'https://coderviewqanda.firebaseIO.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

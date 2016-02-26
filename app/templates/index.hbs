@@ -2,8 +2,8 @@
   {{#if model}}
     {{#each model as |question|}}
       <div class="row well">
-        <div class="col-md-1">
-          <p>question.question</p>
+        <div class="col-md-8">
+          {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
           <!-- {{#link-to 'show-blog' blog}}<img style="max-width:30px; margin-top: 22px;" src="bike.png">{{/link-to}} -->
         </div>
         <div class="col-md-6">
@@ -14,4 +14,7 @@
   {{else}}
     <h2>Let's add some blogs!</h2>
   {{/if}}
+
+  {{new-question save="save"}}
+
 </div>
