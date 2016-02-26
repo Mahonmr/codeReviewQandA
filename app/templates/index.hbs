@@ -2,12 +2,8 @@
   {{#if model.questions}}
     {{#each model.questions as |question|}}
       <div class="row well">
-        <div class="col-md-8">
+        <div class="col-md-12">
           {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-          <!-- {{#link-to 'show-blog' blog}}<img style="max-width:30px; margin-top: 22px;" src="bike.png">{{/link-to}} -->
-        </div>
-        <div class="col-md-6">
-          <!-- <h2>{{#link-to 'edit-blog' blog}}{{blog.subject}}{{/link-to}}</h2> -->
         </div>
       </div>
     {{/each}}
@@ -16,18 +12,4 @@
   {{/if}}
 
   {{new-question save="save"}}
-
-<ul>
-  {{#if model.answers}}
-    {{#each model.answers as |answers|}}
-      <!-- <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li> -->
-    {{/each}}
-  {{else}}
-    <h2>Let's add some Answers!</h2>
-  {{/if}}
-</ul>
-
-<!-- {{new-city saveCity="saveCity"}} -->
-
-
 </div>

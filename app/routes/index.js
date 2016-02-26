@@ -16,7 +16,6 @@ export default Ember.Route.extend({
     },
 
     destroyQuestion(question) {
-      console.log("Are we here")
       question.destroyRecord();
       this.transitionTo('index');
     }

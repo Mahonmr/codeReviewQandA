@@ -1,6 +1,12 @@
-<h2>More information about {{model.question}}'s by {{model.authour}}</h2>
+<h2>More information about {{model.question}}'s by {{model.author}}</h2>
 
 {{show-question question=model}}
 
 {{update-question question=model update="update"}}
 {{new-answer saveAnswer="saveAnswer" question=model}}
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.answer}}</li>
+  {{/each}}
+</ul>
