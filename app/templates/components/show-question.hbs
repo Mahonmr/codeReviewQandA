@@ -1,6 +1,10 @@
-
-<div>
-  <h2>{{question.question}}</h2>
-  <h2>{{question.author}}</h2>
-  <h2>{{question.notes}}</h2>
+<div class="container">
+  <div class="row well">
+    <div class="col-md-12">
+      <h2>Question: {{question.question}}</h2>
+      <h2>Author: {{question.author}}</h2>
+      <h2>Notes: {{question.notes}}</h2>
+    </div>
+    {{update-question question=question update="update"}}
+  </div>
 </div>
