@@ -16,8 +16,8 @@ export default Ember.Component.extend({
         author: this.get('author') || null,
         notes: this.get('notes') || null,
       };
-      this.set('addNewQuestion', false),
-      this.sendAction('save', params)
+      this.set('addNewQuestion', false);
+      this.sendAction('save', params);
     }
   }
 });
